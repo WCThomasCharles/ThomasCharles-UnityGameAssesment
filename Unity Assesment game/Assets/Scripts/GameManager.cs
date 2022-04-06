@@ -37,6 +37,6 @@ public class GameManager : MonoBehaviour
 
     public void ShowVictoryScreen()
     {
-
+        GameObject.Find("Victory Screen").SetActive(true);
     }
 }

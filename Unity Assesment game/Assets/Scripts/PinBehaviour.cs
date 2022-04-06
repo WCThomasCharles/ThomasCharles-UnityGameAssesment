@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class PinBehaviour : MonoBehaviour
 {
-    public PinManager manager;
+    public PinManager pinsManager;
+    private GameManager gameManager;
 
     private BoxCollider2D hb;
     private Rigidbody2D rb;
@@ -13,6 +14,7 @@ public class PinBehaviour : MonoBehaviour
     {
         hb = GetComponent<BoxCollider2D>();
         rb = GetComponent<Rigidbody2D>();
+        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
     }
     private void OnCollisionEnter2D(Collision2D collider)
     {
@@ -20,7 +22,8 @@ public class PinBehaviour : MonoBehaviour
         {
             hb.enabled = false;
             collider.gameObject.GetComponent<PlayerBehaviour>().Explode();
-            manager.LaunchAllPins(collider.gameObject.transform.position);
+            pinsManager.LaunchAllPins(collider.gameObject.transform.position);
+            gameManager.ShowVictoryScreen();
         }
     }
 
