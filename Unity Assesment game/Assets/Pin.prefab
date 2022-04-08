@@ -143,6 +143,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 9107314270342425166}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98e2736c44e65474ea353591f2ee5725, type: 3}
+  m_Script: {fileID: 11500000, guid: 39291218d0dee3846aea84edc1455f07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pinsManager: {fileID: 0}
+  gameManager: {fileID: 0}
