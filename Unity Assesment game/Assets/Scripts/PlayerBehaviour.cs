@@ -34,6 +34,7 @@ public class PlayerBehaviour : MonoBehaviour
         if(collider.CompareTag("Kill Box"))
         {
             gameManager.ShowGameOverScreen();
+            ExplodeSelf();
         }
     }
 }
