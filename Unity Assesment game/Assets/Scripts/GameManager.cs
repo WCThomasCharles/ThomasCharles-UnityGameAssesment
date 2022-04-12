@@ -5,21 +5,32 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject victoryScreen;
-    public GameObject gameOverScreen;
+    public GameObject victoryScreen; // The screen to show when the player wins
+    public GameObject gameOverScreen; // The screen to show when the player loses
 
+
+    // GoToScene is a function that can be called by buttons to switch scenes
+    // it takes the name of the scene the button switches to as an argument
     public void GoToScene(string sceneToActivate)
     {
         SceneManager.LoadScene(sceneToActivate);
     }
+
+
+    // RestartThisLevel loads the current scene reseting it to the start
+    // It is called by the restart buttons
     public void RestartThisLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+
+
     public void ShowVictoryScreen()
     {
         victoryScreen.SetActive(true);
     }
+
+
     public void ShowGameOverScreen()
     {
         gameOverScreen.SetActive(true);

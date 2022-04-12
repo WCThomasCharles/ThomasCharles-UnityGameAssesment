@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PinManager : MonoBehaviour
 {
-    public GameObject[] pins;
+    public GameObject[] pins; // a list of all the pins under this manager
 
     public void LaunchAllPins(Vector3 playerPosition)
     {
