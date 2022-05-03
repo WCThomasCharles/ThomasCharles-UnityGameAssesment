@@ -12,6 +12,7 @@ public class TitleManager : MonoBehaviour
     public GameObject tutorialScreen1;
     public GameObject tutorialScreen2;
     public GameObject tutorialScreen3;
+    public GameObject tutorialScreen4;
 
     // Switch canvas is the function that is called by buttons on the title screen that change what is displayed
     // it takes one argument, the number that corresponds to the screen the button is suppose to switch to
@@ -35,6 +36,9 @@ public class TitleManager : MonoBehaviour
 
         if (canvasToDisplay == 4) tutorialScreen3.SetActive(true);
         else if (canvasToDisplay != 4) tutorialScreen3.SetActive(false);
+
+        if (canvasToDisplay == 5) tutorialScreen4.SetActive(true);
+        else if (canvasToDisplay != 5) tutorialScreen4.SetActive(false);
     }
 
     // GoToScene is a function that can be called by buttons to switch scenes

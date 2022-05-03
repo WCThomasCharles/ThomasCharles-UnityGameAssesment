@@ -33,13 +33,13 @@ public class PlayerBehaviour : MonoBehaviour
         explosion.Play();
         Destroy(gameObject);
     }
-    
-    
+
+
     // Called when the player enters a trigger collider
     void OnTriggerEnter2D(Collider2D collider)
     {
         // checks if the collider is tagged "Kill Box"
-        if(collider.CompareTag("Kill Box"))
+        if (collider.CompareTag("Kill Box"))
         {
             gameManager.ShowGameOverScreen();
             ExplodeSelf();

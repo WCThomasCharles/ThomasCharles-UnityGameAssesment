@@ -24,7 +24,7 @@ public class FollowPlayer : MonoBehaviour
         if (playerLocation != null)
         {
             // moves to the players position considering the offset
-            transform.position = playerLocation.position + new Vector3 (0, 0, -zOffset);
+            transform.position = playerLocation.position + new Vector3(0, 0, -zOffset);
         }
     }
 }
