@@ -20,7 +20,7 @@ public class TitleManager : MonoBehaviour
     {
         // - 0 is the start screen
         // - 1 is the level selector
-        // - 2, 3, and 4 are tutorial screens 1, 2, and 3
+        // - 2, 3, 4, and 5 are tutorial screens 1, 2, 3, and 4 respectivley 
 
         if (canvasToDisplay == 0) startScreen.SetActive(true);
         else if (canvasToDisplay != 0) startScreen.SetActive(false);
